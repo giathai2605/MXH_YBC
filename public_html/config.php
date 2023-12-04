@@ -11,9 +11,9 @@
 // MySQL Hostname
 $sql_db_host = "localhost";
 // MySQL Database User
-$sql_db_user = "admin_ybc";
+$sql_db_user = "root";
 // MySQL Database Password
-$sql_db_pass = "gQwVnpKdDb23";
+$sql_db_pass = "";
 // MySQL Database Name
 $sql_db_name = "admin_ybc";
 
@@ -24,7 +24,7 @@ $sql_db_name = "admin_ybc";
 // $sql_db_name = "admin_imuzica";
 
 // Site URL
-$site_url = "https://designweb.top/"; // e.g (http://example.com)
+$site_url = "https://localhost/MXH_YBC/public_html/"; // e.g (http://example.com)
 
 $auto_redirect = true;
 
