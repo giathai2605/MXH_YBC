@@ -15,7 +15,7 @@ $sql_db_user = "root";
 // MySQL Database Password
 $sql_db_pass = "";
 // MySQL Database Name
-$sql_db_name = "admin_ybc";
+$sql_db_name = "mxh";
 
 // $sql_db_user = "admin_imuzica";
 // // MySQL Database Password
