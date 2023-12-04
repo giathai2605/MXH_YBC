@@ -1,0 +1,51 @@
+<label for="type">Thể loại lĩnh vực</label>
+<select class="form-control show-tick chosen-select-<?php echo($wo['field']->id) ?>" id="type" name="type">
+  <option value="textbox" <?php echo($wo['field']->type == 'textbox' ? 'selected' : '') ?>>Ô văn bản</option>
+  <option value="textarea" <?php echo($wo['field']->type == 'textarea' ? 'selected' : '') ?>>Vùng văn bản</option>
+  <option value="selectbox" <?php echo($wo['field']->type == 'selectbox' ? 'selected' : '') ?>>Chọn ô</option>
+</select>
+<div class="clearfix"></div>
+<br>
+<div class="form-group form-float">
+    <div class="form-line focused">
+      <label class="form-label">Tên lĩnh vực</label>
+        <input type="text" id="name" name="name" class="form-control" value="<?php echo($wo['field']->name) ?>">
+    </div>
+</div>
+
+<div class="form-group form-float">
+    <div class="form-line focused">
+      <label class="form-label">Độ dài lĩnh vực: <small>Mặc định giá trị là 32, và giá trị tối đa là 1000</small></label>
+        <input type="text" id="length" name="length" class="form-control" value="<?php echo($wo['field']->length) ?>">
+    </div>
+</div>
+ <div class="form-group form-float">
+    <div class="form-line focused">
+      <label class="form-label">Mô tả lĩnh vực: <small>Mô tả sẽ hiển thị bên dưới lĩnh vực</small></label>
+        <textarea name="description" id="description" class="form-control" cols="30" rows="3"><?php echo($wo['field']->description) ?></textarea>
+    </div>
+</div>
+<label for="required">Yêu cầu lĩnh vực <small>(Không thể bỏ trống)</small></label>
+<select class="form-control show-tick chosen-select" id="required" name="required">
+  <option value="on" <?php echo($wo['field']->required == 'on' ? 'selected' : '') ?>>Yêu cầu</option>
+  <option value="off" <?php echo($wo['field']->required == 'off' ? 'selected' : '') ?>>Không yêu cầu</option>
+</select>
+<div class="clearfix"></div>
+<br><br>
+<div class="form-group form-float options_<?php echo($wo['field']->id) ?>" style="display:none">
+    <div class="form-line focused">
+      <label class="form-label">Lựa chọn lĩnh vực: <small>Một lựa chọn trên một dòng.</small></label>
+        <textarea name="options" id="options" class="form-control" cols="30" rows="3"><?php echo str_replace(',', "\n", $wo['field']->options)?></textarea>
+    </div>
+</div>
+<input type="hidden" name="id" value="<?php echo($wo['field']->id) ?>">
+<script type="text/javascript">
+  $(document).on('click', '.chosen-select-<?php echo($wo['field']->id) ?>', function(event) {
+    var selectedValue = $(this).val();
+     if (selectedValue == 'selectbox') {
+        $('.options_<?php echo($wo['field']->id) ?>').fadeIn(200);
+     } else {
+        $('.options_<?php echo($wo['field']->id) ?>').fadeOut(200);
+     }
+  });
+</script>

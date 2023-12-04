@@ -1,0 +1,145 @@
+<?php 
+$wo['config']['ffmpeg']  = is_executable($wo['config']['ffmpeg_binary_file']);
+function isEnabled($func) {
+    return is_callable($func) && false === stripos(ini_get('disable_functions'), $func);
+}
+$enabled = true;
+if (!isEnabled('shell_exec')) {
+    $enabled = false;
+}
+?>
+<div class="container-fluid">
+    <div>
+        <h3>Cài đặt FFMPEG</h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#">Trang chủ</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">Cài đặt</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Cài đặt FFMPEG</li>
+            </ol>
+        </nav>
+    </div>
+    <!-- Vertical Layout -->
+    <div class="row">
+        <div class="col-lg-6 col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Cài đặt hệ thống FFMPEG</h6>
+                    <div class="ffmpeg-settings-alert"></div>
+                    <form class="ffmpeg-settings" method="POST">
+                        <p>Hệ thống sẽ nén, chuyển đổi và tối ưu hóa video sang mp4. Hệ thống này yêu cầu cái đặt "ffmpeg" trong máy chủ. </p><br>
+                        <label for="upload_system">Hệ thống FFMPEG  </label>
+                        <div class="form-group">
+                            <div class="form-check form-check-inline">
+                                <input  class="form-check-input" type="radio" name="ffmpeg_system" id="ffmpeg_system-enabled" value="on" <?php echo ($wo['config']['ffmpeg_system'] == 'on') ? 'checked': '';?>>
+                                <label class="form-check-label" for="ffmpeg_system-enabled">Kích hoạt</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input  class="form-check-input" type="radio" name="ffmpeg_system" id="ffmpeg_system-disabled" value="off" <?php echo ($wo['config']['ffmpeg_system'] == 'off') ? 'checked': '';?>>
+                                <label class="form-check-label" for="ffmpeg_system-disabled" class="m-l-20">Vô hiệu hóa</label>
+                            </div>
+                        </div>   
+                        Cài đặt FFMPEG như thế nào?<br>
+                        <a href="https://www.vultr.com/docs/how-to-install-ffmpeg-on-centos" target="_blank">Cài đặt FFMPEG trên Linux Centos</a><br>
+                        <a href="https://github.com/adaptlearning/adapt_authoring/wiki/Installing-FFmpeg" target="_blank">Cài đặt FFMPEG trên Linux Ubuntu | Windows</a><br>Nếu bạn vẫn không thể cài đặt FFMPEG, hãy liên lạc với người chủ cung cấp và họ sẽ cài đặt nó. <br><br>
+                        <?php if ($enabled == false): ?>
+                            <p style="color: red">shell_exec() đã vô hiệu hóa vì lý do bảo mật, hãy liên với người chủ cung cấp để kích hoạt nó. shell_exec được yêu cầu để kích hoạt hệ thống này.</p><br>
+                        <?php endif; ?>
+                        <div class="form-group  form-float">
+                            <br><div class="form-line">
+                                <?php if (!$wo['config']['ffmpeg']): ?>
+                                <label class="form-label" style="color: red;">
+                                    Nhị phân FFmpeg không tồn tại trên đường dẫn: <?php echo $wo['config']['ffmpeg_binary_file'] ?>
+                                </label>
+                                <?php else: ?>
+                                <label class="form-label">
+                                    Đường dẫn tệp nhị phân FFMPEG: trên Linux(/usr/bin/ffmpeg) hoặc Windows(C:\\ffmpeg\bin\ffmpeg.exe)
+                                </label>
+                                <?php endif; ?>
+                                <input type="text" id="ffmpeg_binary_file" name="ffmpeg_binary_file" class="form-control" value="<?php echo $wo['config']['ffmpeg_binary_file'] ?>">
+                                
+                            </div>
+                        </div>
+                        <?php if ($wo['config']['ffmpeg'] && $enabled == true): ?>
+                        <label for="comments_default_num">Tốc độ phát video</label>
+                        <select class="form-control show-tick" id="convert_speed" name="convert_speed">
+                            <option value="ultrafast" <?php echo ($wo['config']['convert_speed'] == 'ultrafast') ? 'selected': '';?>>Cực nhanh</option>
+                            <option value="superfast" <?php echo ($wo['config']['convert_speed'] == 'superfast') ? 'selected': '';?>>Siêu nhanh</option>
+                            <option value="veryfast" <?php echo ($wo['config']['convert_speed'] == 'veryfast') ? 'selected': '';?>>Rất nhanh</option>
+                            <option value="faster" <?php echo ($wo['config']['convert_speed'] == 'faster') ? 'selected': '';?>>Nhanh hơn</option>
+                            <option value="fast" <?php echo ($wo['config']['convert_speed'] == 'fast') ? 'selected': '';?>>Nhanh</option>
+                            <option value="medium" <?php echo ($wo['config']['convert_speed'] == 'medium') ? 'selected': '';?>>Trung bình</option>
+                            <option value="slow" <?php echo ($wo['config']['convert_speed'] == 'slow') ? 'selected': '';?>>Chậm</option>
+                            <option value="slower" <?php echo ($wo['config']['convert_speed'] == 'slower') ? 'selected': '';?>>Chậm hơn</option>
+                            <option value="veryslow" <?php echo ($wo['config']['convert_speed'] == 'veryslow') ? 'selected': '';?>>Rất chậm</option>
+                        </select>
+                        <br><p>Tốc độ phát video ảnh hưởng đến tốc độ mã hóa. Việc sử dụng cài đặt trước chậm hơn giúp bạn nén hoặc chất lượng trên mỗi kích thước tập tin, trong khi cài đặt trước nhanh hơn sẽ khiến bạn nén kém hơn và kích thước tệp cao hơn.</p><br><?php endif; ?>
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <label class="form-label">Cho phép tiện ích bổ sung</label>
+                                <input type="text" id="allowedffmpegExtenstion" name="allowedffmpegExtenstion" class="form-control" value="<?php echo $wo['config']['allowedffmpegExtenstion']?>">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <label class="form-label">Cho phép thể loại MIME</label>
+                                <input type="text" id="ffmpeg_mime_types" name="ffmpeg_mime_types" class="form-control" value="<?php echo $wo['config']['ffmpeg_mime_types']?>">
+                            </div>
+                        </div>
+                        <br>
+                        <input type="hidden" name="hash_id" value="<?php echo Wo_CreateSession();?>">
+
+                        <button type="submit" class="btn btn-primary m-t-15 waves-effect">Lưu</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Gỡ lỗi FFMPEG</h6>
+                    <div class="debug-settings-alert"></div>
+                    <form class="debug-settings" method="POST">
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <label class="form-label">Gỡ lỗi FFMPEG</label>
+                                <textarea name="debug_ffmpeg" id="debug_ffmpeg" class="form-control" cols="30" rows="5" style="height: 300px !important;"></textarea>
+                            </div>
+                        </div>
+                        <input type="hidden" name="hash_id" value="<?php echo Wo_CreateSession();?>">
+
+                        <button type="submit" class="btn btn-primary m-t-15 waves-effect">Gỡ lỗi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+<script type="text/javascript">
+    $(function() {
+        var ffmpeg_settings = $('form.ffmpeg-settings');
+        
+
+        ffmpeg_settings.ajaxForm({
+            url: Wo_Ajax_Requests_File() + '?f=admin_setting&s=update_general_setting',
+            beforeSend: function() {
+                ffmpeg_settings.find('.waves-effect').text("Please wait..");
+            },
+            success: function(data) {
+                if (data.status == 200) {
+                    ffmpeg_settings.find('.waves-effect').text('Save');
+                    $('.ffmpeg-settings-alert').html('<div class="alert alert-success"><i class="fa fa-check"></i> Settings updated successfully</div>');
+                    setTimeout(function () {
+                        $('.ffmpeg-settings-alert').empty();
+                    }, 2000);
+                }
+            }
+        });
+        
+    });
+</script>
