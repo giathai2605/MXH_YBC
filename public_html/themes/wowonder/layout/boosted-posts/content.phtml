@@ -1,7 +1,7 @@
 <div class="page-margin">
 	<div class="row">
-		<div class="col-md-2 leftcol"><?php echo Wo_LoadPage("sidebar/left-sidebar"); ?></div>
-		<div class="col-md-7 middlecol">
+		<div style="position: sticky; top: 50px; z-index: 999"><?php echo Wo_LoadPage("sidebar/left-sidebar"); ?></div>
+		<div class="col-md-9">
 			<?php $up = Wo_GetUserProType($wo['user']['pro_type']); ?>
 			<div class="alert alert-warning">
 				<?php if (!empty(in_array($wo['user']['pro_type'], array_keys($wo['pro_packages'])) && !empty($wo['pro_packages'][$wo['user']['pro_type']]['image'])) && $_COOKIE['mode'] == 'day') { ?>
