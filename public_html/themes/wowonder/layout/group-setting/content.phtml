@@ -142,8 +142,8 @@ if ($wo['setting_page'] == 'group-members' && !empty($_GET['name'])) {
 
 <div class="page-margin">
 	<div class="row setting-panel" style="position:relative;">
-		<div class="col-md-2 leftcol"><?php echo Wo_LoadPage("sidebar/left-sidebar"); ?></div>
-		<div class="col-md-7 singlecol wo_setting_showpage wow_grpage_setts"><?php echo Wo_LoadPage("group-setting/" . $wo['setting_page']); ?></div>
+		<div style="position: sticky; top: 50px; z-index: 999"><?php echo Wo_LoadPage("sidebar/left-sidebar"); ?></div>
+		<div class="col-md-11"><?php echo Wo_LoadPage("group-setting/" . $wo['setting_page']); ?></div>
 		<div class="wo_setting_sidebar"><?php echo Wo_LoadPage('group-setting/group-setting-sidebar');?></div>
 	</div>
 </div>

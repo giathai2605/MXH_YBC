@@ -1587,11 +1587,11 @@ if (!empty($_COOKIE['mode']) && $_COOKIE['mode'] == 'night') {
                                 </a>
                             </li>
                         <?php } ?>
-                        <a class="pow_link" href="https://bit.ly/2R2jrcz" target="_blank">
-                            <p>Được cung cấp bởi</p>
-                            <img src="https://demo.wowonder.com/themes/default/img/logo.png">
-                            <b class="badge">v<?php echo $wo['config']['version']; ?></b>
-                        </a>
+<!--                        <a class="pow_link" href="https://bit.ly/2R2jrcz" target="_blank">-->
+<!--                            <p>Được cung cấp bởi</p>-->
+<!--                            <img src="https://demo.wowonder.com/themes/default/img/logo.png">-->
+<!--                            <b class="badge">v--><?php //echo $wo['config']['version']; ?><!--</b>-->
+<!--                        </a>-->
                     </ul>
                 </div>
             </div>
