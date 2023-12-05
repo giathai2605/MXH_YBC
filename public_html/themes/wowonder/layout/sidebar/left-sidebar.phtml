@@ -42,7 +42,7 @@
                              src="<?php echo $wo['config']['theme_url']; ?>/img/sidebar/market.svg">
                     </center>
                     <span>
-				Thị trường
+                        <?php echo $wo['lang']['trade_connection']; ?>
 				</span>
                 </a>
                 <?php if ($wo['page'] == 'home') { ?>
@@ -50,7 +50,6 @@
                     <?php } ?>
                 <?php } ?>
             </li>
-
 
             <?php if ($wo['config']['events'] == 1) { ?>
                 <li>
