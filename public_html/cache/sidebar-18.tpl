@@ -17,7 +17,7 @@
 				<li>
 					<a class="menu_list" href="https://localhost/MXH_YBC/public_html//congtiendev" data-ajax="?link1=timeline&u=congtiendev">
 						<span class="split-link"><b>bài viết</b></span>
-						<span id="user_post_count">11</span>
+						<span id="user_post_count">12</span>
 					</a>
 				</li>
 													<li>
@@ -81,6 +81,16 @@
 		<span>Nguyễn Mai Phương</span>
 	</a>
 </li> <li>
+	<a class="user" href="https://localhost/MXH_YBC/public_html//Phuong" data-ajax="?link1=timeline&u=Phuong" title="Phương Nguyễn Mai">
+		<img alt="Phương Nguyễn Mai" src="https://localhost/MXH_YBC/public_html//upload/photos/2023/10/Oe4DWrxaPwio1rPzUm8y_31_07ed43e6ff3200a481bf1213d162ed07_avatar.jpg?cache=1698722125" />
+		<span>Phương Nguyễn Mai</span>
+	</a>
+</li> <li>
+	<a class="user" href="https://localhost/MXH_YBC/public_html//vutrongthang" data-ajax="?link1=timeline&u=vutrongthang" title="Thang Vu">
+		<img alt="Thang Vu" src="https://localhost/MXH_YBC/public_html//upload/photos/2023/10/jC9JGmHgkMsiCjcd2j8S_08_cd7c6bcf27dfeaea8cd8082003097e22_avatar.jpg?cache=0" />
+		<span>Thang Vu</span>
+	</a>
+</li> <li>
 	<a class="user" href="https://localhost/MXH_YBC/public_html//daophongtu1998" data-ajax="?link1=timeline&u=daophongtu1998" title="Phong Đạo">
 		<img alt="Phong Đạo" src="https://localhost/MXH_YBC/public_html//upload/photos/2023/10/cY8e5pjJZoVbcGLaBmgU_03_74ab3fd9e7ff39d3e21192258a724030_avatar.jpg?cache=0" />
 		<span>Phong Đạo</span>
@@ -94,16 +104,6 @@
 	<a class="user" href="https://localhost/MXH_YBC/public_html//MaiBui" data-ajax="?link1=timeline&u=MaiBui" title="Bùi Mai">
 		<img alt="Bùi Mai" src="https://localhost/MXH_YBC/public_html//upload/photos/f-avatar.jpg?cache=0" />
 		<span>Bùi Mai</span>
-	</a>
-</li> <li>
-	<a class="user" href="https://localhost/MXH_YBC/public_html//vutrongthang" data-ajax="?link1=timeline&u=vutrongthang" title="Thang Vu">
-		<img alt="Thang Vu" src="https://localhost/MXH_YBC/public_html//upload/photos/2023/10/jC9JGmHgkMsiCjcd2j8S_08_cd7c6bcf27dfeaea8cd8082003097e22_avatar.jpg?cache=0" />
-		<span>Thang Vu</span>
-	</a>
-</li> <li>
-	<a class="user" href="https://localhost/MXH_YBC/public_html//Phuong" data-ajax="?link1=timeline&u=Phuong" title="Phương Nguyễn Mai">
-		<img alt="Phương Nguyễn Mai" src="https://localhost/MXH_YBC/public_html//upload/photos/2023/10/Oe4DWrxaPwio1rPzUm8y_31_07ed43e6ff3200a481bf1213d162ed07_avatar.jpg?cache=1698722125" />
-		<span>Phương Nguyễn Mai</span>
 	</a>
 </li> 			</ul>
 		</div>
@@ -127,34 +127,7 @@
                 <ul class="list-group">
             <li class="list-group-item text-muted sidebar-title-back" contenteditable="false">Thăng hạng</li>
             <li>
-            <div class="home profile-style promoted-style sidebar-page-data wo_sidebar_pages" data-page-id="3">
-    <div class="card hovercard promoted">
-        <div class="cardheader">
-            <img src="https://localhost/MXH_YBC/public_html//upload/photos/2023/10/Vzz9tirEy3Nz6KxhgASm_31_a96601410329b22a683f928be9341936_cover.jpg" id="cover-image" alt="Khởi nghiệp thành công Cover Image">
-        </div>
-		<div class="page_middle">
-        <div class="avatar pull-left">
-            <img id="updateImage-3" alt="Khởi nghiệp thành công Profile Picture" src="https://localhost/MXH_YBC/public_html//upload/photos/d-page.jpg">
-        </div>
-        <div class="info">
-            <div class="title">
-                <span class="user-popover" data-id="3" data-type="page">
-                <a id="user-full-name" href="https://localhost/MXH_YBC/public_html//khoinghiep" data-ajax="?link1=timeline&u=khoinghiep">Khởi nghiệp thành công</a>                  </span>
-            </div>
-			<div class="page_catg text-muted" style="font-size: 12px;">Khởi nghiệp và Doanh nghiệp nhỏ</div>
-			<div class="text-muted" style="font-size: 12px;">
-				3 những người như thế này			</div>
-        </div>
-		</div>
-		<div class="user-follow-button">
-			<span id="like-3">
-    <button type="button" onclick="Wo_RegisterPageLike(3)" class="btn btn-default btn-sm wo_follow_btn" id="wo_useract_btn">
-       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
-       <span class="button-text"> Thích</span>
-    </button>
-</span>		</div>
-    </div>
-</div><div class="home profile-style promoted-style sidebar-page-data wo_sidebar_pages" data-page-id="1">
+            <div class="home profile-style promoted-style sidebar-page-data wo_sidebar_pages" data-page-id="1">
     <div class="card hovercard promoted">
         <div class="cardheader">
             <img src="https://localhost/MXH_YBC/public_html//upload/photos/d-cover.jpg" id="cover-image" alt="Chia sẻ những kiến thức về mkt Cover Image">
@@ -181,6 +154,33 @@
     </button>
 </span>		</div>
     </div>
+</div><div class="home profile-style promoted-style sidebar-page-data wo_sidebar_pages" data-page-id="3">
+    <div class="card hovercard promoted">
+        <div class="cardheader">
+            <img src="https://localhost/MXH_YBC/public_html//upload/photos/2023/10/Vzz9tirEy3Nz6KxhgASm_31_a96601410329b22a683f928be9341936_cover.jpg" id="cover-image" alt="Khởi nghiệp thành công Cover Image">
+        </div>
+		<div class="page_middle">
+        <div class="avatar pull-left">
+            <img id="updateImage-3" alt="Khởi nghiệp thành công Profile Picture" src="https://localhost/MXH_YBC/public_html//upload/photos/d-page.jpg">
+        </div>
+        <div class="info">
+            <div class="title">
+                <span class="user-popover" data-id="3" data-type="page">
+                <a id="user-full-name" href="https://localhost/MXH_YBC/public_html//khoinghiep" data-ajax="?link1=timeline&u=khoinghiep">Khởi nghiệp thành công</a>                  </span>
+            </div>
+			<div class="page_catg text-muted" style="font-size: 12px;">Khởi nghiệp và Doanh nghiệp nhỏ</div>
+			<div class="text-muted" style="font-size: 12px;">
+				3 những người như thế này			</div>
+        </div>
+		</div>
+		<div class="user-follow-button">
+			<span id="like-3">
+    <button type="button" onclick="Wo_RegisterPageLike(3)" class="btn btn-default btn-sm wo_follow_btn" id="wo_useract_btn">
+       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+       <span class="button-text"> Thích</span>
+    </button>
+</span>		</div>
+    </div>
 </div>            <div class="clear"></div>
             </li>
         </ul>
@@ -195,16 +195,16 @@
                     <div class="wow_side_usrs">
 	<div id="wo_sidebar_users">
 		<div class="avatar">
-			<img src="https://localhost/MXH_YBC/public_html//upload/photos/d-avatar.jpg?cache=0" alt="RajuPoduval Profile Picture"/>
+			<img src="https://localhost/MXH_YBC/public_html//upload/photos/d-avatar.jpg?cache=0" alt="Hà Bùi Profile Picture"/>
 		</div>
-		<span class="user-popover" data-id="40" data-type="user">
-			<a href="https://localhost/MXH_YBC/public_html//RajuPoduval" data-ajax="?link1=timeline&u=RajuPoduval" class="wo_user_link_name">
-				<span class="user-name" title="RajuPoduval">RajuPoduval								</span>
+		<span class="user-popover" data-id="25" data-type="user">
+			<a href="https://localhost/MXH_YBC/public_html//1d5eb6282" data-ajax="?link1=timeline&u=1d5eb6282" class="wo_user_link_name">
+				<span class="user-name" title="Hà Bùi">Hà Bùi								</span>
 			</a>
 		</span>
         <div class="user-follow-button">
-            <span id="Follow-40">
-    <button type="button" onclick="Wo_RegisterFollow(40, 0)" class="btn btn-default btn-sm wo_follow_btn" id="wo_useract_btn">
+            <span id="Follow-25">
+    <button type="button" onclick="Wo_RegisterFollow(25, 0)" class="btn btn-default btn-sm wo_follow_btn" id="wo_useract_btn">
        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
        <span class="button-text"> Theo dõi</span>
     </button>
@@ -231,16 +231,16 @@
 </div><div class="wow_side_usrs">
 	<div id="wo_sidebar_users">
 		<div class="avatar">
-			<img src="https://localhost/MXH_YBC/public_html//upload/photos/2023/10/AQzXIisfaXyzQ4N7pef2_03_c5f0984ac909624ec73192cd56d25c9f_avatar.jpg?cache=0" alt="Group MJ Profile Picture"/>
+			<img src="https://localhost/MXH_YBC/public_html//upload/photos/d-avatar.jpg?cache=0" alt="MinhNhat Profile Picture"/>
 		</div>
-		<span class="user-popover" data-id="24" data-type="user">
-			<a href="https://localhost/MXH_YBC/public_html//xmh123" data-ajax="?link1=timeline&u=xmh123" class="wo_user_link_name">
-				<span class="user-name" title="Group MJ">Group MJ								</span>
+		<span class="user-popover" data-id="8" data-type="user">
+			<a href="https://localhost/MXH_YBC/public_html//MinhNhat" data-ajax="?link1=timeline&u=MinhNhat" class="wo_user_link_name">
+				<span class="user-name" title="MinhNhat">MinhNhat								</span>
 			</a>
 		</span>
         <div class="user-follow-button">
-            <span id="Follow-24">
-    <button type="button" onclick="Wo_RegisterFollow(24, 0)" class="btn btn-default btn-sm wo_follow_btn" id="wo_useract_btn">
+            <span id="Follow-8">
+    <button type="button" onclick="Wo_RegisterFollow(8, 0)" class="btn btn-default btn-sm wo_follow_btn" id="wo_useract_btn">
        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
        <span class="button-text"> Theo dõi</span>
     </button>
@@ -249,16 +249,16 @@
 </div><div class="wow_side_usrs">
 	<div id="wo_sidebar_users">
 		<div class="avatar">
-			<img src="https://localhost/MXH_YBC/public_html//upload/photos/d-avatar.jpg?cache=0" alt="kiemtrahethong Profile Picture"/>
+			<img src="https://localhost/MXH_YBC/public_html//upload/photos/f-avatar.jpg?cache=0" alt="MaiPhuong Profile Picture"/>
 		</div>
-		<span class="user-popover" data-id="22" data-type="user">
-			<a href="https://localhost/MXH_YBC/public_html//kiemtrahethong" data-ajax="?link1=timeline&u=kiemtrahethong" class="wo_user_link_name">
-				<span class="user-name" title="kiemtrahethong">kiemtrahethong								</span>
+		<span class="user-popover" data-id="11" data-type="user">
+			<a href="https://localhost/MXH_YBC/public_html//MaiPhuong" data-ajax="?link1=timeline&u=MaiPhuong" class="wo_user_link_name">
+				<span class="user-name" title="MaiPhuong">MaiPhuong								</span>
 			</a>
 		</span>
         <div class="user-follow-button">
-            <span id="Follow-22">
-    <button type="button" onclick="Wo_RegisterFollow(22, 0)" class="btn btn-default btn-sm wo_follow_btn" id="wo_useract_btn">
+            <span id="Follow-11">
+    <button type="button" onclick="Wo_RegisterFollow(11, 0)" class="btn btn-default btn-sm wo_follow_btn" id="wo_useract_btn">
        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
        <span class="button-text"> Theo dõi</span>
     </button>
@@ -333,15 +333,32 @@
 </div><div class="col-xs-6">
 	<div class="wow_content wow_my_groups">
 		<div class="avatar">
-			<a href="https://localhost/MXH_YBC/public_html//kinh_doanh" data-ajax="?link1=timeline&u=kinh_doanh">
-				<img src="https://localhost/MXH_YBC/public_html//upload/photos/d-group.jpg " alt="Nhóm kinh doanh Profile Picture" />
+			<a href="https://localhost/MXH_YBC/public_html//kinhte" data-ajax="?link1=timeline&u=kinhte">
+				<img src="https://localhost/MXH_YBC/public_html//upload/photos/d-group.jpg " alt="Kinh tế và thương mạ Profile Picture" />
 			</a>
 		</div>
 		<div class="wow_my_groups_info">
-			<h3 class="page_title"><a href="https://localhost/MXH_YBC/public_html//kinh_doanh" data-ajax="?link1=timeline&u=kinh_doanh">Nhóm kinh doanh</a></h3>
+			<h3 class="page_title"><a href="https://localhost/MXH_YBC/public_html//kinhte" data-ajax="?link1=timeline&u=kinhte">Kinh tế và thương mạ</a></h3>
 			<p>1 Các thành viên</p>
-			<span id="join-4">
-    <button type="button" onclick="Wo_RegisterGroupJoin(4, 0)" class="btn btn-default btn-sm wo_follow_btn" id="wo_useract_btn">
+			<span id="join-5">
+    <button type="button" onclick="Wo_RegisterGroupJoin(5, 1)" class="btn btn-default btn-sm wo_follow_btn" id="wo_useract_btn">
+       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+       <span class="button-text"> Tham gia</span>
+    </button>
+</span>		</div>
+	</div>
+</div><div class="col-xs-6">
+	<div class="wow_content wow_my_groups">
+		<div class="avatar">
+			<a href="https://localhost/MXH_YBC/public_html//songcham" data-ajax="?link1=timeline&u=songcham">
+				<img src="https://localhost/MXH_YBC/public_html//upload/photos/d-group.jpg " alt="Doanh nghiệp trẻ Profile Picture" />
+			</a>
+		</div>
+		<div class="wow_my_groups_info">
+			<h3 class="page_title"><a href="https://localhost/MXH_YBC/public_html//songcham" data-ajax="?link1=timeline&u=songcham">Doanh nghiệp trẻ</a></h3>
+			<p>3 Các thành viên</p>
+			<span id="join-2">
+    <button type="button" onclick="Wo_RegisterGroupJoin(2, 0)" class="btn btn-default btn-sm wo_follow_btn" id="wo_useract_btn">
        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
        <span class="button-text"> Tham gia</span>
     </button>
@@ -364,23 +381,6 @@
     </button>
 </span>		</div>
 	</div>
-</div><div class="col-xs-6">
-	<div class="wow_content wow_my_groups">
-		<div class="avatar">
-			<a href="https://localhost/MXH_YBC/public_html//kinhte" data-ajax="?link1=timeline&u=kinhte">
-				<img src="https://localhost/MXH_YBC/public_html//upload/photos/d-group.jpg " alt="Kinh tế và thương mạ Profile Picture" />
-			</a>
-		</div>
-		<div class="wow_my_groups_info">
-			<h3 class="page_title"><a href="https://localhost/MXH_YBC/public_html//kinhte" data-ajax="?link1=timeline&u=kinhte">Kinh tế và thương mạ</a></h3>
-			<p>1 Các thành viên</p>
-			<span id="join-5">
-    <button type="button" onclick="Wo_RegisterGroupJoin(5, 1)" class="btn btn-default btn-sm wo_follow_btn" id="wo_useract_btn">
-       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
-       <span class="button-text"> Tham gia</span>
-    </button>
-</span>		</div>
-	</div>
 </div>                </div>
                 <div class="clear"></div>
             </li>
@@ -388,7 +388,7 @@
                         <ul class="list-group">
             			<div class="wow_side_online">
 				<svg clip-rule="evenodd" fill-rule="evenodd" height="512" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 48 48" width="512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="_Linear1" gradientTransform="matrix(27 -20 20 27 552 310)" gradientUnits="userSpaceOnUse" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#0056e0"/><stop offset=".01" stop-color="#0056e0"/><stop offset="1" stop-color="#00e5b8"/></linearGradient><g transform="translate(-159 -212)"><g transform="translate(-385 -60)"><g id="ngicon"><path d="m574.118 303.571c0-5.937-5.882-10.939-13.309-10.939s-13.309 5.002-13.309 10.939c0 .199.172 2.279.346 4.29.189 2.89 2.589 5.139 5.488 5.139 4.132 0 10.818 0 14.95-.002 2.899 0 5.299-2.251 5.486-5.142.175-2.006.348-4.086.348-4.285zm.076-7.914c1.854 2.286 2.924 5.036 2.924 7.914 0 .211-.172 2.398-.356 4.51-.129 1.877-.86 3.578-1.999 4.918 2.718 0 5.712-.001 7.973-.002 2.886 0 5.28-2.234 5.482-5.112.153-1.454.282-2.798.282-2.944 0-2.133-1.003-4.126-2.775-5.725-2.38-2.146-6.205-3.584-10.534-3.584-.335 0-.668.008-.997.025zm.997-11.657c-2.398 0-4.376 1.999-4.376 4.5s1.978 4.5 4.376 4.5 4.377-1.999 4.377-4.5-1.979-4.5-4.377-4.5zm-14.382-5c-2.983 0-5.436 2.495-5.436 5.605 0 3.111 2.453 5.606 5.436 5.606 2.982 0 5.436-2.495 5.436-5.606 0-3.11-2.454-5.605-5.436-5.605z" fill="url(#_Linear1)"/></g></g></g></svg>
-				<p>1 Người dùng trực tuyến</p>
+				<p>2 Người dùng trực tuyến</p>
 			</div>
         </ul>
                 <ul class="list-group wow_side_invite_prnt">
@@ -458,7 +458,7 @@
 			</span>
 			đã phản ứng với <a class="second-user-color" data-ajax="?link1=timeline&u=congtiendev" href="https://localhost/MXH_YBC/public_html//congtiendev">Công Tiến Lê</a> <a class="main-color" href="https://localhost/MXH_YBC/public_html//post/113_ok.html"> bài đăng </a>.			<span class="notification-time active">
 				<span class="ajax-time" title="2023-12-04T09:48:58+00:00">
-					22 giờ				</span>
+					24 giờ				</span>
 			</span>
 			</div>
 		</div>
@@ -478,7 +478,7 @@
 			</span>
 			đã phản ứng với <a class="second-user-color" data-ajax="?link1=timeline&u=congtiendev" href="https://localhost/MXH_YBC/public_html//congtiendev">Công Tiến Lê</a> <a class="main-color" href="https://localhost/MXH_YBC/public_html//post/113_ok.html"> bài đăng </a>.			<span class="notification-time active">
 				<span class="ajax-time" title="2023-12-04T09:48:32+00:00">
-					22 giờ				</span>
+					24 giờ				</span>
 			</span>
 			</div>
 		</div>
